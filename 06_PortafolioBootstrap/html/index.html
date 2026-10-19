@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abril De Los Santos">
+    <meta name="keywords" content="curriculum, portafolio, personal, estudiante, proyectos, experiencia, desarrollo web, bootstrap, HTML5, CSS3">
+    <meta name="description" content="Portafolio de evidencias personal de Abril De Los Santos - Desarrollo Web y Proyectos Académicos.">
+    <link rel="icon" href="Favicon/Logo.svg">
+    
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="../bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <!-- Iconos de Bootstrap (CDN opcional para iconos de redes y categorías) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <title>Portafolio de Evidencias - Abril De Los Santos</title>
+</head>
+
+<body class="bg-light">
+
+    <!-- 1. ENCABEZADO Y NAVEGACIÓN (NAVBAR) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#inicio">
+                <img src="../Logo.svg" alt="Logo Abril De Los Santos" width="30" height="30" class="d-inline-block align-text-top me-2">
+                Abril De Los Santos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto text-center">
+                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    <a class="nav-link" href="#academico">Académico</a>
+                    <a class="nav-link" href="#laboral">Laboral</a>
+                    <a class="nav-link" href="#multimedia">Evidencias</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+  <!-- 2. SECCIÓN PRINCIPAL / BANNER CARRUSEL -->
+    <section id="inicio" class="mb-5">
+        <div id="carouselPortafolio" class="carousel slide carousel-fade shadow" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPortafolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselPortafolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselPortafolio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1 (se agrega <img> directamente desde la raíz) -->
+                <div class="carousel-item active">
+                    <img src="../chica demon.webp" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Portafolio de Evidencias">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h1 class="h3 text-uppercase">Portafolio de Evidencias</h1>
+                        <p>Bienvenid@ a mi sitio web personal de proyectos y trayectoria.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="../concho.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Desarrollo Web y Diseño">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2 class="h3">Diseño & Desarrollo Frontend</h2>
+                        <p>Creación de interfaces web modernas y responsivas con Bootstrap.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="../gatito_matematicas.png" class="d-block w-100 object-fit-cover" style="height: 400px;" alt="Proyectos e Innovación">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2 class="h3">Formación Contínua</h2>
+                        <p>Apasionada por aprender nuevas tecnologías y herramientas de software.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortafolio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPortafolio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- 3. BARRA DE TECNOLOGÍAS Y HABILIDADES (6 ICONOS EN UN RENGLÓN) -->
+    <section class="container my-5 text-center">
+        <h3 class="text-secondary mb-4 text-uppercase fs-6 fw-bold">Tecnologías y Competencias</h3>
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 g-3 justify-content-center align-items-center">
+            <div class="col">
+                <div class="p-3 bg-white rounded shadow-sm border">
+                    <i class="bi bi-filetype-html display-6 text-danger"></i>
+                    <p class="mb-0 mt-2 fw-semibold small">HTML5</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-white rounded shadow-sm border">
+                    <i class="bi bi-filetype-css display-6 text-primary"></i>
+                    <p class="mb-0 mt-2 fw-semibold small">CSS3</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-white rounded shadow-sm border">
+                    <i class="bi bi-bootstrap-fill display-6 text-purple" style="color: #6f42c1;"></i>
+                    <p class="mb-0 mt-2 fw-semibold small">Bootstrap</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-white rounded shadow-sm border">
+                    <i class="bi bi-filetype-js display-6 text-warning"></i>
+                    <p class="mb-0 mt-2 fw-semibold small">JavaScript</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-white rounded shadow-sm border">
+                    <i class="bi bi-laptop display-6 text-info"></i>
+                    <p class="mb-0 mt-2 fw-semibold small">Soporte IT</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 bg-white rounded shadow-sm border">
+                    <i class="bi bi-git display-6 text-danger"></i>
+                    <p class="mb-0 mt-2 fw-semibold small">Git / Control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="container py-5">
+        <div class="row align-items-center g-4">
+            <div class="col-12 col-md-5 text-center">
+                <img src="../WhatsApp Image 2026-01-20 at 6.50.54 PM.jpeg" class="img-fluid rounded-circle shadow border border-3 border-white" style="max-width: 280px;" alt="Foto Perfil Abril De Los Santos">
+            </div>
+            <div class="col-12 col-md-7">
+                <h2 class="fw-bold text-dark mb-3">SOBRE MÍ</h2>
+                <p class="lead text-muted">
+                    ¡Hola! Soy <strong>Abril De Los Santos</strong>. Bienvenid@ a mi sitio web personal donde comparto información sobre mi formación académica, experiencia laboral y evidencias de proyectos.
+                </p>
+                <p>
+                    Soy una estudiante apasionada por la tecnología y el diseño web. Me considero una persona proactiva, dedicada y con ganas de seguir aprendiendo nuevas herramientas de desarrollo frontend e ingeniería de software.
+                </p>
+                <a href="#contacto" class="btn btn-primary btn-lg mt-2 shadow-sm">
+                    <i class="bi bi-envelope-fill me-2"></i>Contáctame
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECCIÓN ACADÉMICA Y LABORAL (TARJETAS/CARDS) -->
+    <section class="bg-white py-5 shadow-sm">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Información Académica -->
+                <div class="col-12 col-md-6" id="academico">
+                    <div class="card h-100 border-0 bg-light shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-mortarboard-fill fs-2 text-primary me-3"></i>
+                                <h3 class="card-title h4 mb-0">DATOS ACADÉMICOS</h3>
+                            </div>
+                            <ul class="list-group list-group-flush bg-transparent">
+                                <li class="list-group-item bg-transparent px-0">
+                                    <strong>Educación Media Superior:</strong><br>Bachillerato General (2022 - 2025)
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <strong>Educación Superior:</strong><br>Licenciatura / Ingeniería en Tecnologías de la Información (2025 - Presente)
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <strong>Cursos complementarios:</strong><br>Introducción a HTML5, CSS3, Maquetación Web y Bootstrap.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experiencia Laboral -->
+                <div class="col-12 col-md-6" id="laboral">
+                    <div class="card h-100 border-0 bg-light shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-briefcase-fill fs-2 text-primary me-3"></i>
+                                <h3 class="card-title h4 mb-0">EXPERIENCIA LABORAL</h3>
+                            </div>
+                            <ul class="list-group list-group-flush bg-transparent">
+                                <li class="list-group-item bg-transparent px-0">
+                                    <strong>Asistente Técnica:</strong><br>Soporte básico a equipos de cómputo y redes (2025).
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <strong>Proyectos Escolares:</strong><br>Diseños de interfaces web, maquetación de sitios personales y prototipos UI.
+                                </li>
+                                <li class="list-group-item bg-transparent px-0">
+                                    <strong>Desarrollo Colaborativo:</strong><br>Manejo de repositorios en GitHub e implementación de estilos responsivos.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SECCIÓN MULTIMEDIA Y EVIDENCIAS -->
+    <section id="multimedia" class="container py-5">
+        <h2 class="text-center fw-bold mb-4">EVIDENCIAS Y MULTIMEDIA</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body text-center p-4">
+                        <h4 class="card-title h5 mb-3">Video de Presentación del Proyecto</h4>
+                        <div class="ratio ratio-16x9 rounded overflow-hidden shadow-sm mb-3">
+                            <video controls class="w-100">
+                                <source src="../videos/presentacion.mp4" type="video/mp4">
+                                Tu navegador no soporta el formato de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FORMULARIO DE CONTACTO -->
+    <section id="contacto" class="bg-white py-5 shadow-sm">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h2 class="text-center fw-bold mb-4">FORMULARIO DE CONTACTO</h2>
+                    <form action="#" method="post" class="needs-validation">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-semibold">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="correo" class="form-label fw-semibold">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" class="form-control" placeholder="ejemplo@correo.com" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label fw-semibold">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" class="form-control" placeholder="Motivo del mensaje">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label fw-semibold">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" class="form-control" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100 py-2 shadow-sm">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. PIE DE PÁGINA (FOOTER) -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start g-3">
+                <div class="col-12 col-md-6">
+                    <h5 class="mb-1 fw-bold">Abril De Los Santos</h5>
+                    <p class="mb-0 text-white-50 small">Portafolio de Evidencias Personal | LDSM402</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <a href="https://github.com" target="_blank" class="text-white text-decoration-none me-3"><i class="bi bi-github fs-5"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="text-white text-decoration-none me-3"><i class="bi bi-linkedin fs-5"></i></a>
+                    <a href="mailto:ejemplo@correo.com" class="text-white text-decoration-none"><i class="bi bi-envelope-fill fs-5"></i></a>
+                </div>
+            </div>
+            <hr class="border-secondary my-3">
+            <div class="text-center text-white-50 small">
+                2026 Abril De Los Santos. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap local -->
+    <script src="../bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
